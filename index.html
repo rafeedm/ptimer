@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productivity Timer</title>
   <link rel="stylesheet" href="/style.css" />
-</head>
+  <link rel="icon" href="/ptimer_icon.png" </head>
 
 <body style="margin: 0;">
   <div class="full-height" id="container">
@@ -18,18 +18,43 @@
     </div>
     <div id="right-side">
       <div id="stopwatch">00:00:00:00</div>
-      <div class="right-btn-flex">
-        <div>
-          <button id="right-btn">Start/Stop</button>
-          <p class="p-right">cmd/cntrl + enter</p>
+      <div id="right-align">
+        <div class="right-btn-flex">
+          <div>
+            <button id="right-btn">Start/Stop</button>
+            <p class="p-right">cmd/cntrl + enter</p>
+          </div>
+          <div>
+            <button id="right-btn">Clock Out</button>
+            <p class="p-right">esc</p>
+          </div>
         </div>
-        <div>
-          <button id="right-btn">Clock Out</button>
-          <p class="p-right">esc</p>
+        <div id="scroll-window">
+          <!-- <p style="margin: 0;">Progress</p> -->
+          <table style="width: 100%;">
+            <caption>Progress</caption>
+            <tr>
+              <td>Mar 19</td>
+              <td>02:33:43:21</td>
+            </tr>
+            <tr>
+              <td>Mar 19</td>
+              <td>02:33:43:21</td>
+            </tr>
+            <tr>
+              <td>Mar 19</td>
+              <td>02:33:43:21</td>
+            </tr>
+            <tr>
+              <td>Mar 19</td>
+              <td>02:33:43:21</td>
+            </tr>
+            <tr>
+              <td>Mar 19</td>
+              <td>02:33:43:21</td>
+            </tr>
+          </table>
         </div>
-      </div>
-      <div id="scroll-window">
-        <p style="margin: 0;">Progress</p>
       </div>
     </div>
   </div>
