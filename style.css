@@ -2,9 +2,33 @@ html, body{
   height: 100%;
 }
 
-.full-height{
-  height: 100%;
-  width: 100%;
+h1{
+  color: #ffffff;
+  font-family: "futura", sans-serif;
+  font-weight: 200;
+  font-size: 4.5vw;
+  padding: 1vw 0vw;
+}
+
+p{
+  color: #ffffff;
+  font-family: "futura", sans-serif;
+  font-size: 2vw;
+  font-style: italic;
+  padding: 4vw 0vw;
+}
+
+button{
+  background-color: #ffffff;
+  font-family: "futura", sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  padding: 1vw;
+  border-radius: 3vw;
+}
+
+#p2{
+  padding-bottom: 0vw !important;
 }
 
 #container {
@@ -18,9 +42,11 @@ html, body{
 #left-side {
   background-color: black;
   height: 100%;
+  text-align: center;
 }
 
 #right-side {
   background-color: #ffffff;
   height: 100%;
 }
+
