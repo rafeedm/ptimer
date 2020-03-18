@@ -12,12 +12,25 @@
   <div class="full-height" id="container">
     <div id="left-side">
       <h1>Productivity Timer</h1>
-      <p>We spend hours on our computers.<br>But how many are actually productive?</p>
-      <p id="p2">Sign in to store your data</p>
-      <button id="left-button" type="button">Sign in with Google</button>
+      <p class="p-left">We spend hours on our computers.<br>But how many are actually productive?</p>
+      <p class="p-left" id="p2">Sign in to store your data</p>
+      <button id="left-btn" type="button">Sign in with Google</button>
     </div>
     <div id="right-side">
-      <h2>hi</h2>
+      <div id="stopwatch">00:00:00:00</div>
+      <div class="right-btn-flex">
+        <div>
+          <button id="right-btn">Start/Stop</button>
+          <p class="p-right">cmd/cntrl + enter</p>
+        </div>
+        <div>
+          <button id="right-btn">Clock Out</button>
+          <p class="p-right">esc</p>
+        </div>
+      </div>
+      <div id="scroll-window">
+        <p style="margin: 0;">Progress</p>
+      </div>
     </div>
   </div>
 </body>

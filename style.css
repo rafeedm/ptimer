@@ -11,20 +11,45 @@ h1{
 }
 
 p{
-  color: #ffffff;
   font-family: "futura", sans-serif;
   font-size: 2vw;
-  font-style: italic;
-  padding: 4vw 0vw;
 }
 
 button{
-  background-color: #ffffff;
   font-family: "futura", sans-serif;
   font-size: 2vw;
   text-align: center;
-  padding: 1vw;
+}
+
+.p-right{
+  color: black;
+  margin: 0.75vw 0vw;
+}
+
+.p-left{
+  color: #ffffff;
+  padding: 4vw 0vw;
+  font-style: italic;
+}
+
+.right-btn-flex{
+  display: flex;
+  padding-left: 6.5vw;
+}
+
+#left-btn{
+  background-color: #ffffff;
   border-radius: 3vw;
+  padding: 1vw 2vw;
+}
+
+#right-btn{
+  color: #ffffff;
+  background-color: black;
+  border-radius: 1.75vw;
+  padding: 2vw 2.5vw;
+  font-weight: 100;
+  margin: 0vw 2vw;
 }
 
 #p2{
@@ -48,5 +73,24 @@ button{
 #right-side {
   background-color: #ffffff;
   height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
 
+#stopwatch{
+  text-align: center;
+  font-family: "viga", 'Times New Roman', Times, serif;
+  font-size: 6.5vw;
+  padding-top: 9vw;
+  padding-bottom: 6.5vw;
+}
+
+#scroll-window{
+  background-color:#f5f5f5;
+  height: 18vw;
+  width: 20vw;
+  position: absolute;
+  margin: 4vw 15vw;
+  overflow: auto;
+}
