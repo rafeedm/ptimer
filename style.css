@@ -21,6 +21,10 @@ button{
   text-align: center;
 }
 
+button:hover{
+  box-shadow: 7px 7px 10px #a9a9a9;
+}
+
 caption{
   padding-bottom: 0.5vw;
   font-family: "futura", sans-serif;
@@ -29,6 +33,7 @@ caption{
 td{
   font-size: 1.5vw;
   font-family: "futura", sans-serif;
+  border-bottom: 1px solid #a9a9a9;
 }
 
 .p-right{
