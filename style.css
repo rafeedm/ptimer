@@ -52,13 +52,13 @@ td{
   padding-left: 6.5vw;
 }
 
-#left-btn{
+.left-btn{
   background-color: #ffffff;
   border-radius: 3vw;
   padding: 1vw 2vw;
 }
 
-#right-btn{
+.right-btn{
   color: #ffffff;
   background-color: black;
   border-radius: 1.75vw;
