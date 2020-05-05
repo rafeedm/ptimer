@@ -5,7 +5,7 @@ var sw = {
   ego: null, // holds HTML start/stop button
   timer: null, // timer object
   now: 0, // current timer
-  init: function() {
+  init: function () {
     // Get HTML elements
     sw.etime = document.getElementById("stopwatch");
     sw.erst = document.getElementById("reset");
@@ -19,7 +19,7 @@ var sw = {
   },
 
   /* [ACTIONS] */
-  tick: function() {
+  tick: function () {
     // tick() : update display if stopwatch running
 
     // Calculate hours, mins, seconds
@@ -44,7 +44,7 @@ var sw = {
     sw.etime.innerHTML = hours + ":" + mins + ":" + secs;
   },
 
-  start: function() {
+  start: function () {
     // start() : start the stopwatch
 
     sw.timer = setInterval(sw.tick, 1000);
@@ -53,7 +53,7 @@ var sw = {
     sw.ego.addEventListener("click", sw.stop);
   },
 
-  stop: function() {
+  stop: function () {
     // stop() : stop the stopwatch
 
     clearInterval(sw.timer);
@@ -63,7 +63,7 @@ var sw = {
     sw.ego.addEventListener("click", sw.start);
   },
 
-  reset: function() {
+  reset: function () {
     // reset() : reset the stopwatch
 
     // Stop if running
@@ -74,13 +74,13 @@ var sw = {
     // Reset time
     sw.now = -1;
     sw.tick();
-  }
+  },
 };
 
 window.addEventListener("load", sw.init);
 
 //keyboard shortcuts
-document.onkeyup = function(e) {
+document.onkeyup = function (e) {
   if (e.which == 27) {
     if (window.confirm("Are you sure you want to clock out for the day?")) {
       document.getElementById("reset").click();

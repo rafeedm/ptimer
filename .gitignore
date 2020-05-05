@@ -1,2 +1,5 @@
 pglayout.png
 ptimer_icon.png
+node_modules
+package.json
+package-lock.json
