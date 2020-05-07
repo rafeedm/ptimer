@@ -3,3 +3,8 @@ ptimer_icon.png
 node_modules
 package.json
 package-lock.json
+firebase.json
+database.rules.json
+tailwind.config.js
+.firebaserc
+firebase-debug.log

@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+  const app = firebase.app();
+  console.log(app);
+});
+
+function googleLogin() {
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase
+    .auth()
+    .signInWithPopup(provider)
+    .then((result) => {
+      const user = result.user;
+      document.write(user.displayName);
+      console.log(user);
+    });
+}
+
+//stopwatch object
 var sw = {
   /* [INIT] */
   etime: null, // holds HTML time display
@@ -91,10 +109,35 @@ document.onkeyup = function (e) {
 };
 
 //google sign in
-function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log("Name: " + profile.getName());
-  console.log("Image URL: " + profile.getImageUrl());
-  console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
-}
+// function onSignIn(googleUser) {
+//   var profile = googleUser.getBasicProfile();
+//   console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
+//   console.log("Name: " + profile.getName());
+//   console.log("Image URL: " + profile.getImageUrl());
+//   console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
+// }
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   // // The Firebase SDK is initialized and available here!
+//   //
+//   // firebase.auth().onAuthStateChanged(user => { });
+//   // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+//   // firebase.messaging().requestPermission().then(() => { });
+//   // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+//   //
+
+//   try {
+//     let app = firebase.app();
+//     console.log(app);
+//     let features = ["auth", "database", "messaging", "storage"].filter(
+//       (feature) => typeof app[feature] === "function"
+//     );
+//     document.getElementById(
+//       "load"
+//     ).innerHTML = `Firebase SDK loaded with ${features.join(", ")}`;
+//   } catch (e) {
+//     console.error(e);
+//     document.getElementById("load").innerHTML =
+//       "Error loading the Firebase SDK, check the console.";
+//   }
+// });

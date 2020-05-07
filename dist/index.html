@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Productivity Timer</title>
-    <link rel="stylesheet" href="/dist/style.css" />
-    <link rel="icon" href="ptimer_icon.png" />
-    <meta name="google-signin-scope" content="profile email" />
-    <meta
-      name="google-signin-client_id"
-      content="188211994247-vib3h84t1a69ck7jmir3cd6jqtfnklro.apps.googleusercontent.com"
-    />
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-  </head>
 
-  <body style="margin: 0;" class="bg-blue-300">
-    <div class="full-height" id="container">
-      <div id="left-side">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.14.2/firebase-database.js"></script>
+    <!-- <script defer src="/__/firebase/7.14.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.2/firebase-storage.js"></script> -->
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+  </head>
+  <body>
+    <div >
+      <div >
         <h1>Productivity Timer</h1>
-        <p class="p-left">
+        <p >
           We spend hours on our computers.<br />But how many are actually
           productive?
         </p>
-        <p class="p-left" id="p2">Sign in to store your data</p>
-        <button class="left-btn" type="button">Sign in with Google</button>
+        <p >Sign in to store your data</p>
+        <button onclick="googleLogin()">Sign in with Google</button>
         <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
       </div>
-      <div id="right-side">
-        <div id="stopwatch">00:00:00</div>
-        <div id="right-align">
-          <div class="right-btn-flex">
+      <div >
+        <div>00:00:00</div>
+        <div">
+          <div>
             <div>
-              <button class="right-btn" id="controller">Start/Stop</button>
-              <p class="p-right">ctrl + enter</p>
+              <button >Start/Stop</button>
+              <p>ctrl + enter</p>
             </div>
             <div>
-              <button class="right-btn" id="reset">Clock Out</button>
-              <p class="p-right">esc</p>
+              <button >Clock Out</button>
+              <p>esc</p>
             </div>
           </div>
-          <div id="scroll-window">
+          <div >
             <!-- <p style="margin: 0;">Progress</p> -->
-            <table style="width: 100%;">
+            <table>
               <caption>
                 Progress
               </caption>
@@ -70,29 +72,9 @@
         </div>
       </div>
     </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyDQ4D2-M4yc2V5EkT1ja5bqgOpXvW-jAa0",
-        authDomain: "ptimer-29c46.firebaseapp.com",
-        databaseURL: "https://ptimer-29c46.firebaseio.com",
-        projectId: "ptimer-29c46",
-        storageBucket: "ptimer-29c46.appspot.com",
-        messagingSenderId: "188211994247",
-        appId: "1:188211994247:web:1d27db1eb140c63269a222",
-        measurementId: "G-N4F619XM5R",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
+    <script src="main.js">
+      
     </script>
-    <script src="main.js"></script>
   </body>
 </html>
