@@ -4,7 +4,7 @@ A stopwatch for clocking in and out once we're sitting at our computers to measu
 
 ## Built with
 
-- [Javascript]
+- Javascript
 - [Firebase](https://firebase.google.com/)
 - [Tailwindcss](https://tailwindcss.com/)
 
@@ -12,4 +12,4 @@ A stopwatch for clocking in and out once we're sitting at our computers to measu
 
 _Coming Soon_
 
-![Version 2 picture](ptimer v2.png)
+![Version 2 picture](ptimerv2.png)
