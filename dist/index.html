@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Productivity Timer</title>
-
+    <link rel="stylesheet" href="style.css" />
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.14.2/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -14,67 +14,11 @@
     <script defer src="/__/firebase/7.14.2/firebase-storage.js"></script> -->
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
-
   </head>
-  <body>
-    <div >
-      <div >
-        <h1>Productivity Timer</h1>
-        <p >
-          We spend hours on our computers.<br />But how many are actually
-          productive?
-        </p>
-        <p >Sign in to store your data</p>
-        <button onclick="googleLogin()">Sign in with Google</button>
-        <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
-      </div>
-      <div >
-        <div>00:00:00</div>
-        <div">
-          <div>
-            <div>
-              <button >Start/Stop</button>
-              <p>ctrl + enter</p>
-            </div>
-            <div>
-              <button >Clock Out</button>
-              <p>esc</p>
-            </div>
-          </div>
-          <div >
-            <!-- <p style="margin: 0;">Progress</p> -->
-            <table>
-              <caption>
-                Progress
-              </caption>
-              <tr>
-                <td>Mar 19</td>
-                <td>02:33:43:21</td>
-              </tr>
-              <tr>
-                <td>Mar 19</td>
-                <td>02:33:43:21</td>
-              </tr>
-              <tr>
-                <td>Mar 19</td>
-                <td>02:33:43:21</td>
-              </tr>
-              <tr>
-                <td>Mar 19</td>
-                <td>02:33:43:21</td>
-              </tr>
-              <tr>
-                <td>Mar 19</td>
-                <td>02:33:43:21</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
+  <body class="bg-gray-100"">
+    <div  class="absolute min-h-screen min-w-full m-8 border border-black">
+      <h1 >hi</h1>
     </div>
-
-    <script src="main.js">
-      
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
